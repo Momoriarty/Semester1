@@ -15,9 +15,9 @@ public class soal06 {
 
         int bil[][] = {{1, 7}, {3, 2}, {8, 7}};
 
-        for (int i = 0; i < bil.length; i++) {
-            for (int j = 0; j < bil[i].length; j++) {
-                System.out.print(bil[i][j] + " ");
+        for (int[] bil1 : bil) {
+            for (int j = 0; j < bil1.length; j++) {
+                System.out.print(bil1[j] + " ");
             }
             System.out.println("");
         }

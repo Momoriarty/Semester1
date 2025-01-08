@@ -5,7 +5,6 @@
  */
 package pertemuan13;
 
-import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 /**
@@ -15,16 +14,15 @@ import javax.swing.JOptionPane;
 public class soal07 {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
         int angka[][] = new int[2][3];
         int ganjil = 0, genap = 0;
 
-        for (int i = 0; i < angka.length; i++) {
-            for (int j = 0; j < angka[i].length; j++) {
-                angka[i][j] = Integer.parseInt(JOptionPane.showInputDialog("Inpun Nilai : "));
-                System.out.print(angka[i][j] + " ");
-                if (angka[i][j] % 2 == 0) {
+        for (int[] angka1 : angka) {
+            for (int j = 0; j < angka1.length; j++) {
+                angka1[j] = Integer.parseInt(JOptionPane.showInputDialog("Inpun Nilai : "));
+                System.out.print(angka1[j] + " ");
+                if (angka1[j] % 2 == 0) {
                     genap++;
                 } else {
                     ganjil++;
