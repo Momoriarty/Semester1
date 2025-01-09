@@ -1,7 +1,9 @@
+package auth;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class auth {
@@ -22,12 +24,13 @@ public class auth {
             System.out.println("Username: " + data[0] + ", Password: " + data[1]);
         }
 
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("src/pertemuan14/test.txt", true))) {
+        System.out.println(Arrays.deepToString(akun));
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("src/auth/test.txt", true))) {
             for (String[] data : akun) {
-                writer.write("Username: " + data[0] + ", Password: " + data[1]);
+                writer.write(Arrays.deepToString(akun));
                 writer.newLine();
             }
-            System.out.println("Data berhasil ditambahkan ke file src/pertemuan14/test.txt!");
+            System.out.println("Data berhasil ditambahkan ke file src/auth/test.txt!");
         } catch (IOException e) {
             System.out.println("Terjadi kesalahan saat menulis ke file: " + e.getMessage());
         }

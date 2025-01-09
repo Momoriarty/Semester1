@@ -12,9 +12,7 @@ import javax.swing.JOptionPane;
  * @author LAB282
  */
 public class soal04 {
-
     public static void main(String[] args) {
-
         int angka[][] = new int[3][3],tertinggi = Integer.MIN_VALUE;
         String lokasi = null;
 
@@ -29,16 +27,13 @@ public class soal04 {
             }
             System.out.println(" ");
         }
-
         System.out.println("");
-
         for (int i = 0; i < angka.length; i++) {
             for (int[] angka1 : angka) {
                 System.out.print(angka1[i] + "\t");
             }
             System.out.println(" ");
         }
-
         System.out.println("Data Terbesar : " + tertinggi);
         System.out.println("Berada pada cell: " + lokasi);
     }
