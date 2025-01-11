@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package teori.uas;
 
 /**
@@ -32,7 +28,7 @@ public class tugas01 {
                             } else if (j == 1) {
                                 for (int k = 0; k < 5; k++) {
                                     int kemajuan = Integer.parseInt(JOptionPane.showInputDialog("Masukkan persentase kemajuan tahapan " + (k + 1) + " untuk proyek " + proyek[i][0]));
-                                    total[i] = (total[i] + kemajuan);
+                                    total[i] += kemajuan;
                                 }
                                 total[i] = total[i] / 5;
                                 proyek[i][1] = String.valueOf(total[i]);
@@ -58,7 +54,6 @@ public class tugas01 {
                         System.out.println("Status : " + proyek1[2]);
                     }
                     System.out.println("------------------------------------------------");
-
                     break;
 
                 case 2:
